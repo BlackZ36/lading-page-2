@@ -575,6 +575,7 @@ section {
   padding: 0;
 }
 
+
 .hero blockquote ul li p span i {
   vertical-align: middle;
   font-size: 5px;
@@ -591,7 +592,7 @@ section {
 }
 
 .about-1 blockquote ul {
-  list-style-type: none;
+  
   padding: 0;
 }
 
@@ -623,6 +624,29 @@ section {
   .hero blockquote ul li:last-child {
     padding-bottom: 10px;
   }
+
+  .about-1 blockquote {
+    color: black;
+  }
+
+  .about-1 blockquote ul li p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-1 blockquote ul li {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1px 10px;
+  }
+
+  .about-1 blockquote ul li:first-child {
+    padding-top: 10px;
+  }
+  .about-1 blockquote ul li:last-child {
+    padding-bottom: 10px;
+  }
+
 }
 
 .btn-get-started {
@@ -941,12 +965,12 @@ section {
 }
 
 .about-1 .content ul {
-  list-style: none;
-  padding: 0;
+  
+  padding-left: 10px;
 }
 
 .about-1 .content ul li {
-  padding: 0 0 15px 26px;
+  padding: 0 0 5px 5px;
   position: relative;
   font-size: 15px;
   font-weight: 600;
