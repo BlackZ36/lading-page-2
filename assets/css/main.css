@@ -532,6 +532,10 @@ section {
     z-index: 1;
   }
 
+  .about-1 {
+    display: none;
+  }
+
   #hero-1 {
     display: none !important;
   }
@@ -572,6 +576,26 @@ section {
 }
 
 .hero blockquote ul li p span i {
+  vertical-align: middle;
+  font-size: 5px;
+  margin-right: 6px;
+}
+
+.about-1 blockquote {
+  color: black;
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: var(--font-default);
+  border-left: 25px solid var(--color-primary);
+  margin: 20px 0;
+}
+
+.about-1 blockquote ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-1 blockquote ul li p span i {
   vertical-align: middle;
   font-size: 5px;
   margin-right: 6px;
@@ -788,7 +812,7 @@ section {
 }
 
 .why-us .img-bg {
-  min-height: 500px;
+  max-height: 300px;
   background-size: cover;
 }
 
@@ -797,16 +821,18 @@ section {
 }
 
 .why-us h3 {
+  color: black;
   font-size: 24px;
   font-weight: 700;
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
 }
 
 .why-us h4 {
+  color: black;
   font-size: 18px;
   font-weight: 400;
   color: #29486a;
-  font-family: var(--font-secondary);
+  /* font-family: var(--font-secondary); */
 }
 
 .why-us .swiper {
@@ -817,7 +843,7 @@ section {
 .why-us .swiper-button-prev:after,
 .why-us .swiper-button-next:after {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: #ccc;
 }
 
 .why-us .swiper-button-prev {
@@ -834,7 +860,7 @@ section {
 }
 
 .why-us .swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--color-secondary);
+  background-color: #857d7d;
 }
 
 .why-us .swiper-pagination .swiper-pagination-bullet-active {
@@ -890,6 +916,43 @@ section {
 }
 
 .about .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--color-primary);
+}
+
+/* .about-1 */
+.about-1 {
+  background-color: #fdf8ee;
+}
+
+.about-1 .content h3 {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+.about-1 .content p {
+  margin: 30px 0;
+  color: #29486a;
+}
+
+.about-1 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-1 .content ul li {
+  padding: 0 0 15px 26px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about-1 .content ul i {
   position: absolute;
   font-size: 20px;
   left: 0;
