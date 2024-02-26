@@ -498,7 +498,7 @@ section {
 }
 
 @media (min-width: 1034px) {
-  .hero:after {
+  /* .hero:after {
     position: absolute;
     content: "";
     width: 40%;
@@ -506,8 +506,7 @@ section {
     top: 0;
     bottom: 0;
     opacity: 0.95;
-  }
-  
+  } */
 }
 
 .hero:before {
@@ -525,9 +524,21 @@ section {
     overflow: hidden;
     width: 65vw;
   }
+  .hero {
+    display: flex !important ;
+  }
+
+  .hero .container {
+    z-index: 1;
+  }
+
+  #hero-1 {
+    display: none !important;
+  }
 }
 
-.hero .container {
+.hero {
+  display: none;
   z-index: 1;
 }
 
@@ -590,7 +601,7 @@ section {
   }
 }
 
-.hero .btn-get-started {
+.btn-get-started {
   box-sizing: border-box;
   font-family: var(--font-secondary);
   font-weight: 500;
@@ -605,7 +616,7 @@ section {
   border: 3px solid transparent;
 }
 
-.hero .btn-get-started:hover {
+.btn-get-started:hover {
   color: black;
   border-color: #e10b34; /* Thay đổi màu border khi hover */
   background-color: rgba(255, 255, 255);
@@ -622,7 +633,7 @@ section {
   display: inline-block;
   padding: 12px 30px;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
-  background: #FDF8EE;
+  background: #fdf8ee;
   box-shadow: 5px 6px black;
   border: 3px solid transparent;
 }
@@ -662,9 +673,110 @@ section {
     line-height: 1;
   }
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
+  .btn-get-started,
+  .btn-watch-video {
     font-size: 13px;
+  }
+}
+
+/* hero-1 */
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero-1 {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero-1:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero-1 .container {
+  position: relative;
+  /* padding-top: 74px; */
+  text-align: center;
+}
+
+#hero-1 h1 {
+  margin: 0;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  font-family: "Geologica", sans-serif;
+}
+
+#hero-1 h1 span {
+  color: #ffc451;
+}
+
+#hero-1 h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#hero-1 .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100%;
+  text-align: center;
+}
+
+#hero-1 .icon-box i {
+  font-size: 32px;
+  line-height: 1;
+  color: #ffc451;
+}
+
+#hero-1 .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#hero-1 .icon-box h3 a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#hero-1 .icon-box h3 a:hover {
+  color: #ffc451;
+}
+
+#hero-1 .icon-box:hover {
+  border-color: #ffc451;
+}
+
+@media (min-width: 1024px) {
+  #hero-1 {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-1 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero-1 h2 {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -806,7 +918,7 @@ section {
 }
 
 .services-list .service-item .title a {
-  color: var(--color-secondary);
+  color: black;
 }
 
 .services-list .service-item .title a:hover {
@@ -822,12 +934,14 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
     url("../img/hero-bg-2.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
-
 
 @media (min-width: 1365px) {
   .call-to-action {
@@ -2177,13 +2291,12 @@ section {
   font-size: 15px;
   margin-bottom: 0;
   font-family: var(--font-primary);
-  color:white;
+  color: white;
 }
 
-.footer .footer-content .container a .btn-footer:hover{
+.footer .footer-content .container a .btn-footer:hover {
   background-color: green;
 }
-
 
 .footer .footer-content h4 {
   font-size: 16px;
@@ -2253,7 +2366,6 @@ section {
   color: var(--color-secondary);
 }
 
-
 /* skill */
 .skills-content {
   background-image: url("https://www.liysf.org.uk/wp-content/themes/liysf/images/view-schedule-pdf-bg-img.jpg");
@@ -2284,7 +2396,7 @@ section {
   background-color: #fff; /* Màu nền cho hàng lẻ */
 }
 
-.skill table tr td{
+.skill table tr td {
   color: #fff;
 }
 
