@@ -513,7 +513,7 @@ section {
 .hero:before {
   position: absolute;
   content: "";
-  background: rgba(27, 47, 69, 0.3);
+  background: rgba(27, 47, 69, 0.2);
   inset: 0;
 }
 
@@ -602,13 +602,34 @@ section {
   color: #fff;
   background: var(--color-primary);
 
-  border: 3px solid transparent; /* Thêm border trong trạng thái ban đầu */
+  border: 3px solid transparent;
 }
 
 .hero .btn-get-started:hover {
   color: black;
   border-color: #e10b34; /* Thay đổi màu border khi hover */
   background-color: rgba(255, 255, 255);
+}
+
+.btn-footer {
+  color: black;
+  margin-top: 20px;
+  box-sizing: border-box;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  background: #FDF8EE;
+  box-shadow: 5px 6px black;
+  border: 3px solid transparent;
+}
+
+.btn-footer:hover {
+  color: white;
+  background-color: rgba(255, 11, 52, 0.1);
 }
 
 .hero .btn-watch-video {
@@ -1080,14 +1101,14 @@ section {
 .team .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--color-secondary);
 }
 
 .team .team-member .member-info span {
   font-style: italic;
   display: block;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 50;
   color: #fff;
 }
@@ -2159,7 +2180,7 @@ section {
   color:white;
 }
 
-.footer .footer-content .container a:hover{
+.footer .footer-content .container a .btn-footer:hover{
   background-color: green;
 }
 
