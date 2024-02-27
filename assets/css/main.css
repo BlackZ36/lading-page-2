@@ -687,8 +687,8 @@ section {
 }
 
 .btn-footer:hover {
-  color: white;
-  background-color: rgba(255, 11, 52, 0.1);
+  color: black;
+  border-color: #e10b34;
 }
 
 .hero .btn-watch-video {
